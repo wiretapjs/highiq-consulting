@@ -1,0 +1,20 @@
+{
+  "name": "HighIQ",
+  "version": "1.0.0",
+  "description": "HighIQ Tech Talent Agency",
+  "main": "index.js",
+  "repository": "http://github.com/highiq/highiq-tech-talent-agency",
+  "author": "Ryan C. Martin",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html",
+    "start-node-server": "node-srv --root ./public --port 8001 --index index.html --logs ./nodeserver.log",
+    "start-http-server": "http-server ./public  --port 8002 -o",
+    "start-static-server": "static-server --port 8003 --index index.html --no-cache"
+  },
+  "devDependencies": {
+    "node-srv": "^2.1.1",
+    "parcel-bundler": "^1.6.1"
+  }
+}
